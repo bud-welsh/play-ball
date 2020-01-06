@@ -1,12 +1,9 @@
-player = "Babe Ruth"
-hall_of_fame = True
-hits = 2873
-at_bats = 10623
+print('Welcome to the Batting Calculator')
 
-print(player + " Batting Average")
-print(hits / at_bats)
+player_name = input('What is the name or the player? ')
+hits = int(input('How many hits did ' + player_name + ' have during his career? '))
+at_bats = int(input('How many at bats did ' + player_name + ' have during his career? '))
+batting_average = hits / at_bats
 
-if hall_of_fame == True:
-    print(player + " is in the Hall of Fame")
-else:
-    print(player + " is not in the Hall of Fame")
+print(player_name + ' had a batting average of:')
+print(batting_average)
